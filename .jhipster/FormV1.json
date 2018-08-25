@@ -1,0 +1,23 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "customerId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "formType",
+            "fieldType": "FormType",
+            "fieldValues": "SURVEY,SIGNUP,REGISTRATION,COMPLAINT"
+        }
+    ],
+    "dto": "no",
+    "searchEngine": false,
+    "service": "serviceClass",
+    "entityTableName": "formv1",
+    "jpaMetamodelFiltering": false,
+    "pagination": "infinite-scroll",
+    "microserviceName": "formapplication"
+}

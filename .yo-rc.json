@@ -1,0 +1,38 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.easyapper.form",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "5.1.0",
+    "applicationType": "microservice",
+    "baseName": "formapplication",
+    "packageName": "com.easyapper.form",
+    "packageFolder": "com/easyapper/form",
+    "serverPort": "8081",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "prodDatabaseType": "mongodb",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "66775bba54f5140e61c4e8b249f67ac901d9692c",
+    "enableTranslation": true,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "clientPackageManager": "yarn",
+    "nativeLanguage": "en",
+    "languages": [
+      "en",
+      "hi"
+    ],
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
