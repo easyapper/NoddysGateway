@@ -1,0 +1,7 @@
+.filter-container_age-panel,.filter-container_age-panel-left,.filter-container_age-panel-right,.filter-container_category-panel,.filter-container_category-panel-left,.filter-container_category-panel-right{
+    display: flex;
+}
+
+.filter-container_age-panel-left,.filter-container_age-panel-right,.filter-container_category-panel-left,.filter-container_category-panel-right{
+    flex-direction: column;
+}

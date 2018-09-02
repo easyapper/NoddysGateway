@@ -1,0 +1,31 @@
+<section class="section-1">
+  <div class="section-1_text-1">Book your child’s next</div>
+  <div #rotatingText class="section-1_text-2"></div>
+  <div class="section-1_text-3">Drop-ins, semesters, camps and events—discover it all on Noddy</div>
+  <div>
+    <form>
+      <mat-form-field>
+          <input type="text" matInput placeholder="Search Events" [(ngModel)]="eventName" name="eventName">
+      </mat-form-field>
+      &nbsp;&nbsp;
+      <mat-form-field>
+          <mat-select [(ngModel)]="eventDate" name="eventDate">
+            <mat-option *ngFor="let date of dates" [value]="date.value">
+              {{date.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        &nbsp;&nbsp;
+        <button mat-raised-button color="warn" (click)="displayActivities()">Search</button>
+  </form>
+  </div>
+</section>
+<section class="section-2">
+  <div class="section-2_img">
+      <img src="/assets/images/img2.png" alt="">
+  </div>    
+  <div class="section-2_text">
+    <h2>Mom and dad’s go-to tool</h2>
+    <p>Newfound web-scheduling convenience gives you deserved support as you book and manage your children’s wonder-full schedules at home or on the go.</p>
+  </div> 
+</section>

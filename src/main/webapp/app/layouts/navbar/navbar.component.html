@@ -1,0 +1,16 @@
+<mat-toolbar>
+  <span class="toolbar_logo">Noddys Club</span>
+  <span>|</span>
+  <span class="toolbar_city">
+    <mat-form-field>
+      <mat-select placeholder="Select City">
+        <mat-option *ngFor="let city of cities" [value]="city.value">
+          {{city.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </span>
+  <span class="toolbar_login">Log In</span>
+</mat-toolbar> 
+
+

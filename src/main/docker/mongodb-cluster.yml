@@ -1,16 +1,16 @@
 version: '2'
 services:
-    formapplication-mongodb:
+    gateway-mongodb:
         image: mongo:3.6.3
         ports:
             - "27017:27017"
-        command: mongos --configdb formapplication-mongodb-config
-    formapplication-mongodb-node:
+        command: mongos --configdb gateway-mongodb-config
+    gateway-mongodb-node:
         build:
             context: .
             dockerfile: mongodb/MongoDB.Dockerfile
         command: mongod --replSet rs1 --noprealloc --smallfiles
-    formapplication-mongodb-config:
+    gateway-mongodb-config:
         image: mongo:3.6.3
-        container_name: formapplication-mongodb-config
+        container_name: gateway-mongodb-config
         command: mongod --noprealloc --smallfiles --configsvr --dbpath /data/db

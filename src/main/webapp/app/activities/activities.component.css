@@ -1,0 +1,7 @@
+.activities{
+    display: flex;
+}
+
+.activities app-filter-container{
+    padding: 25px
+}
