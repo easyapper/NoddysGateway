@@ -2,3 +2,10 @@ mat-card{
     margin-bottom: 20px;
     width: 90%;
 }
+
+.list-container{
+    padding-left: 25px;
+    padding-top: 25px;
+    height: 100%;
+    background-color: #fbfaf9;
+}

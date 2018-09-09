@@ -9,3 +9,10 @@
 .filter-container_location .mat-form-field{
     width: 100%
 }
+
+.filter-container{
+    padding: 25px;
+    height: 600px;
+    overflow: auto;
+    background-color: #f3f0eb;
+}

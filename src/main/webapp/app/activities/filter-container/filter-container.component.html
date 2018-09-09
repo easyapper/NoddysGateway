@@ -1,102 +1,104 @@
-<h4>BOOKING TYPE</h4>
-<div>
-    <button mat-raised-button color="warn">Drop-in</button>
-    <button mat-raised-button>Semester</button>
-    <button mat-raised-button>Camp</button>
-</div>
-<h4>LOCATION</h4>
-<div class="filter-container_location">
-    <mat-form-field>
-        <input type="text" matInput placeholder="Enter address or neighbor">
-    </mat-form-field>
-</div>
-<h4>TIME</h4>
-<div>
-    <nouislider [connect]="true" [min]="0" [max]="15" [(ngModel)]="inputSpeedRange"></nouislider>
-</div>
-<div>
-    <mat-expansion-panel>
-        <mat-expansion-panel-header>
-            <mat-panel-title>AGE</mat-panel-title>
-        </mat-expansion-panel-header>
-        <div class="filter-container_age-panel">
-            <div class="filter-container_age-panel-left">
-                <mat-checkbox>0 - 3 mo</mat-checkbox>
-                <mat-checkbox>6 - 9 mo</mat-checkbox>
-                <mat-checkbox>1 - 1.5 yrs</mat-checkbox>
-                <mat-checkbox>2 - 2.5 yrs</mat-checkbox>
-                <mat-checkbox>3 - 4 yrs</mat-checkbox>
-                <mat-checkbox>5 - 6 yrs</mat-checkbox>
-                <mat-checkbox>7 - 8 yrs</mat-checkbox>
-                <mat-checkbox>9 - 10 yrs</mat-checkbox>
-                <mat-checkbox>11 - 12 yrs</mat-checkbox>
-                <mat-checkbox>13 - 14 yrs</mat-checkbox>
-                <mat-checkbox>15 - 16 yrs</mat-checkbox>
-                <mat-checkbox>17 - 18 yrs</mat-checkbox>
-                <mat-checkbox>No Adult Required</mat-checkbox>
+<div class="filter-container">
+    <h4>BOOKING TYPE</h4>
+    <div>
+        <button mat-raised-button color="warn">Drop-in</button>
+        <button mat-raised-button>Semester</button>
+        <button mat-raised-button>Camp</button>
+    </div>
+    <h4>LOCATION</h4>
+    <div class="filter-container_location">
+        <mat-form-field>
+            <input type="text" matInput placeholder="Enter address or neighbor">
+        </mat-form-field>
+    </div>
+    <h4>TIME</h4>
+    <div>
+        <nouislider [connect]="true" [min]="0" [max]="15" [(ngModel)]="inputSpeedRange"></nouislider>
+    </div>
+    <div>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>AGE</mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="filter-container_age-panel">
+                <div class="filter-container_age-panel-left">
+                    <mat-checkbox>0 - 3 mo</mat-checkbox>
+                    <mat-checkbox>6 - 9 mo</mat-checkbox>
+                    <mat-checkbox>1 - 1.5 yrs</mat-checkbox>
+                    <mat-checkbox>2 - 2.5 yrs</mat-checkbox>
+                    <mat-checkbox>3 - 4 yrs</mat-checkbox>
+                    <mat-checkbox>5 - 6 yrs</mat-checkbox>
+                    <mat-checkbox>7 - 8 yrs</mat-checkbox>
+                    <mat-checkbox>9 - 10 yrs</mat-checkbox>
+                    <mat-checkbox>11 - 12 yrs</mat-checkbox>
+                    <mat-checkbox>13 - 14 yrs</mat-checkbox>
+                    <mat-checkbox>15 - 16 yrs</mat-checkbox>
+                    <mat-checkbox>17 - 18 yrs</mat-checkbox>
+                    <mat-checkbox>No Adult Required</mat-checkbox>
+                </div>
+                <div class="filter-container_age-panel-right">
+                    <mat-checkbox>3 - 6 mo</mat-checkbox>
+                    <mat-checkbox>9 mo - 1 yr</mat-checkbox>
+                    <mat-checkbox>1.5 - 2 yrs</mat-checkbox>
+                    <mat-checkbox>2.5 - 3 yrs</mat-checkbox>
+                    <mat-checkbox>4 - 5 yrs</mat-checkbox>
+                    <mat-checkbox>6 - 7 yrs</mat-checkbox>
+                    <mat-checkbox>8 - 9 yrs</mat-checkbox>
+                    <mat-checkbox>10 - 11 yrs</mat-checkbox>
+                    <mat-checkbox>12 - 13 yrs</mat-checkbox>
+                    <mat-checkbox>14 - 15 yrs</mat-checkbox>
+                    <mat-checkbox>16 - 17 yrs</mat-checkbox>
+                    <mat-checkbox>Adult</mat-checkbox>
+                </div>
             </div>
-            <div class="filter-container_age-panel-right">
-                <mat-checkbox>3 - 6 mo</mat-checkbox>
-                <mat-checkbox>9 mo - 1 yr</mat-checkbox>
-                <mat-checkbox>1.5 - 2 yrs</mat-checkbox>
-                <mat-checkbox>2.5 - 3 yrs</mat-checkbox>
-                <mat-checkbox>4 - 5 yrs</mat-checkbox>
-                <mat-checkbox>6 - 7 yrs</mat-checkbox>
-                <mat-checkbox>8 - 9 yrs</mat-checkbox>
-                <mat-checkbox>10 - 11 yrs</mat-checkbox>
-                <mat-checkbox>12 - 13 yrs</mat-checkbox>
-                <mat-checkbox>14 - 15 yrs</mat-checkbox>
-                <mat-checkbox>16 - 17 yrs</mat-checkbox>
-                <mat-checkbox>Adult</mat-checkbox>
+        </mat-expansion-panel>
+    </div>
+    <div>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>CATEGORY</mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="filter-container_category-panel">
+                <div class="filter-container_category-panel-left">
+                    <mat-checkbox>Academic</mat-checkbox>
+                    <mat-checkbox>Camp</mat-checkbox>
+                    <mat-checkbox>Dance</mat-checkbox>
+                    <mat-checkbox>Exercise</mat-checkbox>
+                    <mat-checkbox>Gym</mat-checkbox>
+                    <mat-checkbox>Martial Arts</mat-checkbox>
+                    <mat-checkbox>Gym</mat-checkbox>
+                    <mat-checkbox>Martial Arts</mat-checkbox>
+                    <mat-checkbox>Nature</mat-checkbox>
+                    <mat-checkbox>Outdoor</mat-checkbox>
+                    <mat-checkbox>Reading</mat-checkbox>
+                    <mat-checkbox>Sports</mat-checkbox>
+                    <mat-checkbox>Theater</mat-checkbox>
+                </div>
+                <div class="filter-container_category-panel-right">
+                    <mat-checkbox>Art</mat-checkbox>
+                    <mat-checkbox>Cooking</mat-checkbox>
+                    <mat-checkbox>Events</mat-checkbox>
+                    <mat-checkbox>Free Activity</mat-checkbox>
+                    <mat-checkbox>Language</mat-checkbox>
+                    <mat-checkbox>Music</mat-checkbox>
+                    <mat-checkbox>Open Play</mat-checkbox>
+                    <mat-checkbox>Private Lessons</mat-checkbox>
+                    <mat-checkbox>Science</mat-checkbox>
+                    <mat-checkbox>Swim</mat-checkbox>
+                </div>
             </div>
-        </div>
-    </mat-expansion-panel>
-</div>
-<div>
-  <mat-expansion-panel>
-      <mat-expansion-panel-header>
-          <mat-panel-title>CATEGORY</mat-panel-title>
-      </mat-expansion-panel-header>
-      <div class="filter-container_category-panel">
-          <div class="filter-container_category-panel-left">
-              <mat-checkbox>Academic</mat-checkbox>
-              <mat-checkbox>Camp</mat-checkbox>
-              <mat-checkbox>Dance</mat-checkbox>
-              <mat-checkbox>Exercise</mat-checkbox>
-              <mat-checkbox>Gym</mat-checkbox>
-              <mat-checkbox>Martial Arts</mat-checkbox>
-              <mat-checkbox>Gym</mat-checkbox>
-              <mat-checkbox>Martial Arts</mat-checkbox>
-              <mat-checkbox>Nature</mat-checkbox>
-              <mat-checkbox>Outdoor</mat-checkbox>
-              <mat-checkbox>Reading</mat-checkbox>
-              <mat-checkbox>Sports</mat-checkbox>
-              <mat-checkbox>Theater</mat-checkbox>
-          </div>
-          <div class="filter-container_category-panel-right">
-              <mat-checkbox>Art</mat-checkbox>
-              <mat-checkbox>Cooking</mat-checkbox>
-              <mat-checkbox>Events</mat-checkbox>
-              <mat-checkbox>Free Activity</mat-checkbox>
-              <mat-checkbox>Language</mat-checkbox>
-              <mat-checkbox>Music</mat-checkbox>
-              <mat-checkbox>Open Play</mat-checkbox>
-              <mat-checkbox>Private Lessons</mat-checkbox>
-              <mat-checkbox>Science</mat-checkbox>
-              <mat-checkbox>Swim</mat-checkbox>
-          </div>
-      </div>
-  </mat-expansion-panel>
-</div>
-<div>
-  <mat-expansion-panel>
-      <mat-expansion-panel-header>
-          <mat-panel-title>PROVIDERS</mat-panel-title>
-      </mat-expansion-panel-header>
-      
-  </mat-expansion-panel>
-</div>
-<br>
-<div>
-  <button mat-raised-button color="warn">Clear All Filters</button>
+        </mat-expansion-panel>
+    </div>
+    <div>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>PROVIDERS</mat-panel-title>
+            </mat-expansion-panel-header>
+
+        </mat-expansion-panel>
+    </div>
+    <br>
+    <div>
+        <button mat-raised-button color="warn">Clear All Filters</button>
+    </div>
 </div>

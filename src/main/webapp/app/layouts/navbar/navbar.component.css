@@ -1,5 +1,6 @@
 .mat-toolbar{
     background: white;
+    border-bottom: 1px solid #d6d6d6;
 }
 
 .toolbar_logo{

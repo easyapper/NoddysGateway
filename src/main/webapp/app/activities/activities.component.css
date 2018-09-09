@@ -3,10 +3,6 @@
 }
 
 .activities app-filter-container{
-    padding: 25px
-}
-
-.activities app-filter-container{
     flex-grow: 1;
     flex-basis: 0;
 }
